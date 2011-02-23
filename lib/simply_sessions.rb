@@ -6,7 +6,6 @@ require 'acts_as_list'
 module SimplySessions
 #	predefine namespace
 end
-require 'simply_sessions/controller'
 
 #	This doesn't seem necessary
 %w{models controllers}.each do |dir|
@@ -18,6 +17,7 @@ end
 if defined?(Rails) && Rails.env == 'test' && Rails.class_variable_defined?("@@configuration")
 	require 'active_support/test_case'
 	require 'simply_sessions/test_helper'
+	require 'simply_sessions/controller'
 	require 'factory_girl'
 #	require 'simply_pages/factories'
 #	else
