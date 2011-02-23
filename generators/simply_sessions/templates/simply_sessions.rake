@@ -1,4 +1,5 @@
-#	From `script/generate calnet_authenticated` ...
-if Gem.searcher.find('calnet_authenticated')
-require 'calnet_authenticated/test_tasks'
+#	From `script/generate simply_sessions` ...
+unless Gem.source_index.find_name('jakewendt-simply_sessions').empty?
+	gem 'jakewendt-simply_sessions'
+	require 'simply_sessions/test_tasks'
 end
