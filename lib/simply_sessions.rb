@@ -6,6 +6,7 @@ require 'acts_as_list'
 module SimplySessions
 #	predefine namespace
 end
+require 'simply_sessions/controller'
 
 #	This doesn't seem necessary
 %w{models controllers}.each do |dir|
