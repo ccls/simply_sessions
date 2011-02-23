@@ -1,0 +1,14 @@
+script/generate simply_sessions [options]
+
+
+Description:
+    Explain the generator
+
+Example:
+    ./script/generate simply_sessions
+
+    This will create:
+        a migration file for 
+
+
+blah blah blah
