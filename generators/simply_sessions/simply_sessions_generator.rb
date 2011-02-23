@@ -1,4 +1,5 @@
-class SimplySessionsGenerator < Rails::Generator::NamedBase
+#class SimplySessionsGenerator < Rails::Generator::NamedBase
+class SimplySessionsGenerator < Rails::Generator::Base
 
 #		def initialize(runtime_args, runtime_options = {})
 #	puts "In initialize"
