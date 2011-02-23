@@ -1,0 +1,42 @@
+module SimplySessions::TestHelper
+
+
+	def login_as( user=nil )
+		uid = ( user.is_a?(User) ) ? user.uid : user
+		if !uid.blank?
+			@request.session[:uid] = uid
+			User.find_or_create_by_uid(uid)
+		end
+	end
+	alias :login :login_as
+	alias :log_in :login_as
+
+	def assert_redirected_to_login
+		assert_response :redirect
+#		puts @response.inspect
+		assert_match "login", @response.redirected_to
+#		assert_match "https://auth-test.berkeley.edu/cas/login",
+#			@response.redirected_to
+	end
+
+	def assert_redirected_to_logout
+		assert_response :redirect
+		assert_redirected_to root_path
+		assert_not_nil flash[:notice]
+#		assert_match "logout", @response.redirected_to
+#		assert_match "https://auth-test.berkeley.edu/cas/logout",
+#			@response.redirected_to
+	end
+
+	def assert_logged_in
+		assert_not_nil session[:uid]
+	end
+
+	def assert_not_logged_in
+		assert_nil session[:uid]
+	end
+
+end
+require 'active_support'
+require 'active_support/test_case'
+ActiveSupport::TestCase.send(:include,SimplySessions::TestHelper)
