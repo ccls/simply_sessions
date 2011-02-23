@@ -1,0 +1,18 @@
+= Simply Sessions
+
+
+== Gemified with Jeweler
+
+ vi Rakefile
+ rake version:write
+
+ rake version:bump:patch
+ rake version:bump:minor
+ rake version:bump:major
+
+ rake gemspec
+
+ rake install
+ rake release
+
+Copyright (c) 2011 [Jake Wendt], released under the MIT license
