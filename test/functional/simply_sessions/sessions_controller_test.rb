@@ -1,6 +1,7 @@
 require 'test_helper'
 
-class SessionsControllerTest < ActionController::TestCase
+class SimplySessions::SessionsControllerTest < ActionController::TestCase
+	tests SessionsControllerTest
 
 	test "should logout if authenticated" do
 		login_as Factory(:user)
