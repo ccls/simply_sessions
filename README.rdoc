@@ -2,7 +2,7 @@
 
 I use this little gem SOLELY IN TESTING to simulate user sessions in other 
 GRAPEs (Gem/RailsApp/PluginEngine).
-It server no purpose in a real app.
+It serves no purpose in a real app.
 
 == Gemified with Jeweler
 
