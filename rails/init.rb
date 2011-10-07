@@ -1,1 +1,1 @@
-require 'jakewendt-simply_sessions'
+require 'ccls-simply_sessions'

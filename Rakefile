@@ -18,11 +18,11 @@ require 'tasks/rails'
 begin
 	require 'jeweler'
 	Jeweler::Tasks.new do |gem|
-		gem.name = "jakewendt-simply_sessions"
+		gem.name = "ccls-simply_sessions"
 		gem.summary = %Q{A simple session manager}
 		gem.description = %Q{A really simple session manager}
 		gem.email = "github@jakewendt.com"
-		gem.homepage = "http://github.com/jakewendt/simply_sessions"
+		gem.homepage = "http://github.com/ccls/simply_sessions"
 		gem.authors = ["George 'Jake' Wendt"]
 		# gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
 
@@ -62,10 +62,10 @@ begin
 #
 		gem.add_dependency('rails', '~> 2')
 #		gem.add_dependency('jrails')
-#		gem.add_dependency('jakewendt-simply_helpful')
-#		gem.add_dependency('jakewendt-ruby_extension')
-#		gem.add_dependency('jakewendt-rails_extension')
-#		gem.add_dependency('jakewendt-simply_authorized')
+#		gem.add_dependency('ccls-simply_helpful')
+#		gem.add_dependency('ccls-ruby_extension')
+#		gem.add_dependency('ccls-rails_extension')
+#		gem.add_dependency('ccls-simply_authorized')
 #		gem.add_dependency('ssl_requirement')
 #		gem.add_dependency('ryanb-acts-as-list')
 #		gem.add_dependency('RedCloth','>4.2.6')

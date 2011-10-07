@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{jakewendt-simply_sessions}
+  s.name = %q{ccls-simply_sessions}
   s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["George 'Jake' Wendt"]
-  s.date = %q{2011-08-10}
+  s.date = %q{2011-10-07}
   s.description = %q{A really simple session manager}
   s.email = %q{github@jakewendt.com}
   s.extra_rdoc_files = [
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "generators/simply_sessions/simply_sessions_generator.rb",
     "generators/simply_sessions/templates/autotest_simply_sessions.rb",
     "generators/simply_sessions/templates/simply_sessions.rake",
-    "lib/jakewendt-simply_sessions.rb",
+    "lib/ccls-simply_sessions.rb",
     "lib/simply_sessions.rb",
     "lib/simply_sessions/autotest.rb",
     "lib/simply_sessions/controller.rb",
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
     "lib/tasks/simply_authorized.rake",
     "rails/init.rb"
   ]
-  s.homepage = %q{http://github.com/jakewendt/simply_sessions}
+  s.homepage = %q{http://github.com/ccls/simply_sessions}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{A simple session manager}
