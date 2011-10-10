@@ -1,7 +1,14 @@
 require 'active_support'
+
+gem 'ccls-ruby_extension'
 require 'ruby_extension'
+
+gem 'ccls-simply_helpful'
 require 'simply_helpful'
+
+gem 'ccls-simply_authorized'
 require 'simply_authorized'
+
 require 'acts_as_list'
 module SimplySessions
 #	predefine namespace
@@ -19,7 +26,6 @@ if defined?(Rails) && Rails.env == 'test' && Rails.class_variable_defined?("@@co
 	require 'simply_sessions/test_helper'
 	require 'simply_sessions/controller'
 	require 'factory_girl'
-#	require 'simply_pages/factories'
 #	else
 #		running a rake task
 end
@@ -28,5 +34,4 @@ ActionController::Routing::Routes.add_configuration_file(
 	File.expand_path(
 		File.join(
 			File.dirname(__FILE__), '../config/routes.rb')))
-
 
