@@ -1,7 +1,10 @@
 require 'active_support'
 
-gem 'ccls-ruby_extension'
-require 'ruby_extension'
+gem 'ccls-common_lib'
+require 'common_lib'
+
+#gem 'ccls-ruby_extension'
+#require 'ruby_extension'
 
 gem 'ccls-simply_helpful'
 require 'simply_helpful'
