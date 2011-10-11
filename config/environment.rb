@@ -12,7 +12,8 @@ Rails::Initializer.run do |config|
 	config.gem 'ccls-simply_authorized'
 	config.gem 'ccls-simply_helpful'
 	config.gem 'ccls-html_test'
-	config.gem 'ccls-rails_extension'
+#	config.gem 'ccls-rails_extension'
+	config.gem 'ccls-common_lib'
 	config.gem 'RedCloth', :version => '> 4.2.6'
 	config.gem 'thoughtbot-factory_girl',
 		:lib => 'factory_girl'

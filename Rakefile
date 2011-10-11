@@ -41,34 +41,8 @@ begin
 #
 		gem.test_files  = FileList['test/**/*.rb']
 		gem.test_files -= FileList['test/test_helper.rb']
-#
-#	It would be really nice if there was a way to
-#	add a source here as ryanb-acts-as-list is on
-#	http://gems.github.com which is rare now.
-#	
-#	Something like ...
-#
-#		gem.add_source('http://gems.github.com')
-#
-#	or
-#
-#		gem.add_dependency('ryanb-acts-as-list',
-#			:source => 'http://gems.github.com')
-#
-#	Perhaps I can just jam this in somewhere!
-#
-#		Gem.sources << 'http://gems.github.com'
-#		Gem.configuration.write
-#
+
 		gem.add_dependency('rails', '~> 2')
-#		gem.add_dependency('jrails')
-#		gem.add_dependency('ccls-simply_helpful')
-#		gem.add_dependency('ccls-ruby_extension')
-#		gem.add_dependency('ccls-rails_extension')
-#		gem.add_dependency('ccls-simply_authorized')
-#		gem.add_dependency('ssl_requirement')
-#		gem.add_dependency('ryanb-acts-as-list')
-#		gem.add_dependency('RedCloth','>4.2.6')
 	end
 	Jeweler::GemcutterTasks.new
 rescue LoadError
