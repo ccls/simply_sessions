@@ -10,7 +10,7 @@ Rails::Initializer.run do |config|
 
 #	config.gem 'ccls-simply_sessions'
 	config.gem 'ccls-simply_authorized'
-	config.gem 'ccls-simply_helpful'
+#	config.gem 'ccls-simply_helpful'
 	config.gem 'ccls-html_test'
 #	config.gem 'ccls-rails_extension'
 	config.gem 'ccls-common_lib'
