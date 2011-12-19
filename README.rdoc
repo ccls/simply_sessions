@@ -4,6 +4,10 @@ I use this little gem SOLELY IN TESTING to simulate user sessions in other
 GRAPEs (Gem/RailsApp/PluginEngine).
 It serves no purpose in a real app.
 
+Actually, I think that this is now only used by simply_authorized.
+It may be cleaner to incorporate this functionality and destroy
+the repo and gem.  No rush though.
+
 == Gemified with Jeweler
 
  vi Rakefile
